@@ -36,37 +36,37 @@ Before running this application, make sure you have:
 ### Frontend Setup
 
 1. Clone the repository:
-```bash
+\`\`\`bash
 git clone https://github.com/yourusername/Solana-Transactions-Fullstack.git
 cd Solana-Transactions-Fullstack
-```
+\`\`\`
 
 2. Install dependencies:
-```bash
+\`\`\`bash
 npm install
-```
+\`\`\`
 
 3. Run the development server:
-```bash
+\`\`\`bash
 npm run dev
-```
+\`\`\`
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Backend Setup (Rust)
 
 1. Navigate to the backend directory:
-```bash
+\`\`\`bash
 cd backend
-```
+\`\`\`
 
 2. Install Rust dependencies:
-```bash
+\`\`\`bash
 cargo build
-```
+\`\`\`
 
 3. Set up your wallet keypairs:
-```bash
+\`\`\`bash
 # Generate sender keypair (or use your existing one)
 solana-keygen new --outfile sender.json
 
@@ -75,12 +75,12 @@ solana-keygen new --outfile recipient.json
 
 # Fund your sender wallet on devnet
 solana airdrop 2 --keypair sender.json --url devnet
-```
+\`\`\`
 
 4. Run the Rust application:
-```bash
+\`\`\`bash
 cargo run
-```
+\`\`\`
 
 ## 🎯 Usage
 
@@ -106,7 +106,7 @@ The Rust backend handles:
 
 ## 📁 Project Structure
 
-```
+\`\`\`
 Solana-Transactions-Fullstack/
 ├── app/
 │   ├── globals.css
@@ -131,18 +131,18 @@ Solana-Transactions-Fullstack/
 ├── package.json
 ├── tailwind.config.ts
 └── README.md
-```
+\`\`\`
 
 ## 🔧 Configuration
 
 ### Environment Variables
 
-Create a `.env.local` file in the root directory:
+Create a \`.env.local\` file in the root directory:
 
-```env
+\`\`\`env
 NEXT_PUBLIC_SOLANA_RPC_URL=https://api.devnet.solana.com
 NEXT_PUBLIC_NETWORK=devnet
-```
+\`\`\`
 
 ### Rust Configuration
 
@@ -156,7 +156,7 @@ The Rust backend is configured to:
 
 To connect the frontend with the Rust backend, you'll need to:
 
-1. Create Next.js API routes in `app/api/`
+1. Create Next.js API routes in \`app/api/\`
 2. Set up endpoints for:
    - Getting wallet balance
    - Sending transactions
@@ -164,7 +164,7 @@ To connect the frontend with the Rust backend, you'll need to:
 3. Replace mock data with real Solana RPC calls
 
 Example API route structure:
-```
+\`\`\`
 app/api/
 ├── balance/
 │   └── route.ts
@@ -172,19 +172,19 @@ app/api/
 │   └── route.ts
 └── transactions/
     └── route.ts
-```
+\`\`\`
 
 ## 🧪 Testing
 
 ### Frontend Testing
-```bash
+\`\`\`bash
 npm run test
-```
+\`\`\`
 
 ### Backend Testing
-```bash
+\`\`\`bash
 cargo test
-```
+\`\`\`
 
 ### Manual Testing
 1. Ensure you have SOL in your sender wallet on devnet
@@ -201,9 +201,9 @@ cargo test
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
+2. Create a feature branch: \`git checkout -b feature/amazing-feature\`
+3. Commit your changes: \`git commit -m 'Add amazing feature'\`
+4. Push to the branch: \`git push origin feature/amazing-feature\`
 5. Open a Pull Request
 
 ## 📝 License
@@ -237,7 +237,7 @@ If you encounter any issues or have questions:
 ---
 
 **⚠️ Disclaimer**: This application is for educational and testing purposes on Solana Devnet. Always exercise caution when dealing with real cryptocurrency transactions.
-```
+\`\`\`
 
 This comprehensive README.md provides:
 
@@ -253,4 +253,3 @@ This comprehensive README.md provides:
 10. **Support and roadmap** information
 
 The README is well-structured with emojis for visual appeal and includes all the necessary information for developers to understand, set up, and contribute to your Solana wallet project.
-
